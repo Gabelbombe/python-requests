@@ -8,18 +8,20 @@ Your objective for this challenge will be to produce a tool that will query the 
 
 
 #### Task Details:
- * Input:
-  * Servers:
-    * The file ‘servers.txt’ will include a list of fictitious servers.  Your solution should read this file for it’s list of endpoints.
-    * Please implement the code required to call the endpoint (as an HTTP request) and retrieve the data.
-  * Response from endpoint:
-    * The file ‘responses.txt’ will provide example json data that you should reference for this exercise.
-    * Please DO NOT read the ‘responses.txt’ file in your code.  This is just example data so you can see what could be returned from the endpoints.  Each endpoint can be considered to reply with a single entry from the list in ‘responses.txt’.
- * Output:
-  * Your tool should scan each endpoint and produce a report that aggregates:
-    * Success rate by Application by Version
-  * Your tool should write it’s output to standard out in human readable format.
-  * Your tool should also write output to a local file that is easily computer parsable (plan for this to be consumed by a downstream application).
+
+###### Input:
+* Servers:
+  * The file ‘servers.txt’ will include a list of fictitious servers.  Your solution should read this file for it’s list of endpoints.
+  * Please implement the code required to call the endpoint (as an HTTP request) and retrieve the data.
+* Response from endpoint:
+  * The file ‘responses.txt’ will provide example json data that you should reference for this exercise.
+  * Please DO NOT read the ‘responses.txt’ file in your code.  This is just example data so you can see what could be returned from the endpoints.  Each endpoint can be considered to reply with a single entry from the list in ‘responses.txt’.
+
+###### Output:
+* Your tool should scan each endpoint and produce a report that aggregates:
+  * Success rate by Application by Version
+* Your tool should write it’s output to standard out in human readable format.
+* Your tool should also write output to a local file that is easily computer parsable (plan for this to be consumed by a downstream application).
 
 #### Rules/Expectations:
  * Please implement this in the language of your choice, but, we would prefer no shell-scripting for this exercise.

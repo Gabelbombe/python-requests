@@ -1,6 +1,3 @@
-## Twitter Storage SRE Coding Challenge
-
-
 #### Description:
 Your objective for this challenge will be to produce a tool that will query the ‘status’ page on 1000 servers and produce a report based on data within the status page.  Each server has a ‘status’ endpoint that returns json data.  The details of that json data will be provided below.
 

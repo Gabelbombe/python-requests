@@ -1,9 +1,11 @@
 #### Description:
 Your objective for this challenge will be to produce a tool that will query the ‘status’ page on 1000 servers and produce a report based on data within the status page.  Each server has a ‘status’ endpoint that returns json data.  The details of that json data will be provided below.
 
-Your tool should produce the following reports:
+
+#### Your tool should produce the following reports:
  * Human readable report output to stdout.
  * Computer parseable report output to a file on local disk.
+
 
 #### Task Details:
  * Input:

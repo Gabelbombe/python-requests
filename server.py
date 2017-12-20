@@ -1,9 +1,10 @@
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
-from random import randint
+from random  import randint
 
 import json, random
 
+##
 example = 'logs/example.json'
 
 class GetHandler(BaseHTTPRequestHandler):
@@ -32,7 +33,6 @@ class GetHandler(BaseHTTPRequestHandler):
 
         self.wfile.write(json.dumps(self.random_selection()))
         return
-
 
 def main():
     try:

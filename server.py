@@ -1,4 +1,4 @@
-from BaseHTTPServer import BaseHTTPRequestHandler
+from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from random import randint
 
@@ -34,10 +34,15 @@ class GetHandler(BaseHTTPRequestHandler):
         self.wfile.write(json.dumps(self.random_selection()))
         return
 
+
+def main():
+    try:
+        server = HTTPServer(('', 80), GetHandler)
+        print '->> Starting server at http://127.0.0.1:80 and all patched hosts'
+        server.serve_forever()
+    except KeyboardInterrupt:
+        print '->> Interrupt received; closing server socket'
+        server.socket.close()
+
 if __name__ == '__main__':
-    from BaseHTTPServer import HTTPServer
-    server = HTTPServer(('localhost', 8080), GetHandler)
-    print 'Starting server at http://localhost:8080'
-
-
-server.serve_forever()
+    main()

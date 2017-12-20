@@ -2,8 +2,7 @@ from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from random import randint
 
-import json
-import random
+import json, random
 
 example = 'logs/example.json'
 
